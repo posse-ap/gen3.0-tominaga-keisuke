@@ -1,0 +1,267 @@
+head{
+  font-family: 'Noto Sans JP', sans-serif;
+}
+header{
+  display: flex;
+  flex-direction: row;
+  padding: 0,24,0,24;
+  height: 80px;
+  gap: 474px;
+  justify-content: space-between;
+  position:absolute;
+  width: 1440px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+  align-items: center;
+  margin: 0 auto;
+  }
+.nav{
+  display: flex;
+  list-style-type: none;
+  /* リストの点々の表記 */
+  position: relative;
+  bottom: 15px ;
+  margin-left: 400%;
+  justify-content: space-around;
+  width: 300px;
+  /* なんでwidth必要なん？ */
+}
+.Front{
+  position: absolute;
+  width: 1440px;
+  height: 680px;
+  left: 0px;
+  right: 0px;
+}
+/*  */
+.Best{
+  border:10px solid #eff2f5;
+  border-radius: 24px;
+  background: #eff2f5;
+  width: 500px;
+  height: 281px;
+  top: 198px;
+  left: 80px;
+  margin: 50px;
+  z-index: 50;/* これでマージンおk？ */
+  position: absolute;
+  
+
+}
+
+main section h1{
+  font-size: 60px;
+  font-weight: 700px;
+  line-height: 80px;
+}
+.PosseImg{
+  background:url(./img/img-hero.jpg) ;
+  border-radius: 80px 0px 0px 80px ;
+  background-size: cover;
+  position: absolute;
+  width: 976px;
+  height: 680px;
+  left: 464px;
+  right: 0px;
+  top: 0px;
+  z-index: 10;
+}
+
+  /* 重ねるためimgはbackgroundにいく
+imgをすべて表示させるためにcoverを使う？   */
+.AboutPOSSE{
+
+  text-align: center;
+  position: absolute;
+  width: 984px;
+  height: 442px;
+  left: calc(50% - 984px/2);
+  top: 856px;
+}
+.AboutTitle{
+  position: absolute;
+  width: 195px;
+  height: 90px;
+  left: calc(50% - 195px/2 - 0.5px);
+  top: 0px  
+}
+.AboutPOSSE h2{
+  position: absolute;
+  width: 191px;
+  height: 54px;
+  left: calc(50% - 191px/2);
+  top: 0px;
+  
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  /* identical to box height, or 54px */
+  
+  text-align: center;
+  
+  /* dark */
+  
+  color: #333333; 
+}
+.BlueAbout{
+  position: absolute;
+width: 93px;
+height: 25px;
+left: calc(50% - 93px/2);
+top: 62px;
+
+/* subtitle */
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 180%;
+/* or 25px */
+
+text-align: center;
+
+}
+.ImgText{
+/* Auto layout */
+
+display:flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding:0 px;
+gap: 40px;
+
+position: absolute;
+width: 984px;
+height: 312px;
+left: 0px;
+top: 130px;  
+}
+.Explain{
+  width: 472px;
+height: 175px;
+
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 180%;
+/* or 25px */
+
+text-align: justify;
+
+/* dark */
+
+color: #333333;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+transform: translate(350px,180px);
+}
+
+.AboutImg{
+  background:url(
+    ./img/img-about.jpg 
+  );
+  width: 472px;
+  height: 312px;
+  border-radius: 24px;
+  background-size:cover;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  transform:translateX(-450px);
+  /* * これなに？ * */
+}
+h3{
+  color: #0071bc;
+}
+.line{
+  position: absolute;
+  width: 984px;
+  height: 358px;
+  left: 230px;
+  top: 1438px;
+}
+.inner{
+  position: absolute;
+  left: 22.87%;
+  right: 22.76%;
+  top: 18.99%;
+  bottom: 19.27%;
+  
+}
+.title{
+  position: absolute;
+left: 33.23%;
+right: 33.33%;
+top: 18.99%;
+bottom: 62.85%;
+}
+.iconLink{
+  position: absolute;
+  left: 33.23%;
+  right: 62.7%;
+  top: 22.63%;
+  bottom: 66.2%;
+  
+}
+
+.background{
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0.28%;
+  background: #0071BC;
+mix-blend-mode: normal;
+opacity: 0.9;
+border-radius: 48px;
+background: url(IMG_1683.jpg);
+}
+.AddLINE{
+  position: absolute;
+width: 320px;
+height: 50px;
+left: 0px;
+top: 0px;
+
+
+/* light */
+
+background: #FFFFFF;
+border-radius: 98px;
+}
+.linkDark{
+  position: absolute;
+left: 52.08%;
+right: 2.08%;
+top: 2.08%;
+bottom: 52.08%;
+
+/* dark */
+
+border: 1px solid #333333;
+}
+footer{
+  position: absolute;
+width: 1440px;
+height: 355px;
+left: 0px;
+top: 1875px;
+
+}
+.p{
+  
+  position: absolute;
+  top: 1875px;
+  height: 355px;
+  text-align: center;
+}
+
