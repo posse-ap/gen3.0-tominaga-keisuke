@@ -16,24 +16,46 @@ header{
   align-items: center;
   margin: 0 auto;
   }
+  .posse{
+    margin: 60px;
+    margin-top: 100px; 
+  }
 .nav{
   display: flex;
   list-style-type: none;
   /* リストの点々の表記 */
   position: relative;
-  bottom: 15px ;
+  bottom: 80px;
   margin-left: 400%;
   justify-content: space-around;
   width: 300px;
   /* なんでwidth必要なん？ */
 }
 .Front{
-  position: absolute;
+  position: relative;
   width: 1440px;
   height: 680px;
   left: 0px;
   right: 0px;
+  margin-top: 100px;
 }
+.scrollDown{
+  width: 200px;
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+
+}
+li{
+  color: gray;
+  
+}
+/* .dot{
+  position: relative;
+  color: gray;
+  font-size: 40px;
+} */
+
 /*  */
 .Best{
   border:10px solid #eff2f5;
@@ -41,8 +63,8 @@ header{
   background: #eff2f5;
   width: 500px;
   height: 281px;
-  top: 198px;
-  left: 80px;
+  top: 140px;
+  left: 20px;
   margin: 50px;
   z-index: 50;/* これでマージンおk？ */
   position: absolute;
@@ -108,10 +130,11 @@ imgをすべて表示させるためにcoverを使う？   */
 }
 .BlueAbout{
   position: absolute;
-width: 93px;
+width: 120px;
 height: 25px;
-left: calc(50% - 93px/2);
-top: 62px;
+left: 35px;
+top: 70px;
+
 
 /* subtitle */
 
@@ -123,6 +146,7 @@ line-height: 180%;
 /* or 25px */
 
 text-align: center;
+flex-wrap: nowrap;
 
 }
 .ImgText{
@@ -138,13 +162,13 @@ gap: 40px;
 position: absolute;
 width: 984px;
 height: 312px;
-left: 0px;
 top: 130px;  
 }
 .Explain{
-  width: 472px;
+position:absolute;
+width: 472px;
 height: 175px;
-
+left: 150px;
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
@@ -162,10 +186,11 @@ color: #333333;
 flex: none;
 order: 1;
 flex-grow: 0;
-transform: translate(350px,180px);
 }
 
 .AboutImg{
+  position: absolute;
+  right: 480px;
   background:url(
     ./img/img-about.jpg 
   );
@@ -182,80 +207,114 @@ transform: translate(350px,180px);
 h3{
   color: #0071bc;
 }
+
 .line{
-  position: absolute;
+  position: relative;
   width: 984px;
   height: 358px;
-  left: 230px;
-  top: 1438px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-25%,200%);
+
+
+  
+  color:#eff2f5;
+  z-index: 10;
+  /*  位置指定でごり押したけど子要素を縦から順に並べる方法はある？ */
 }
 .inner{
   position: absolute;
-  left: 22.87%;
-  right: 22.76%;
-  top: 18.99%;
-  bottom: 19.27%;
-  
+  z-index: 10;
+  top: 40px;
+
 }
 .title{
-  position: absolute;
-left: 33.23%;
-right: 33.33%;
-top: 18.99%;
-bottom: 62.85%;
+position: absolute;
+width: 300px;
+left: 110px;
+bottom: 100px;
+flex-wrap: nowrap;
+text-align: center;
 }
-.iconLink{
+.lineIcon{
   position: absolute;
-  left: 33.23%;
-  right: 62.7%;
-  top: 22.63%;
-  bottom: 66.2%;
+  top: 20px;
+  right: 250px;
   
 }
-
 .background{
   position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0.28%;
-  background: #0071BC;
-mix-blend-mode: normal;
-opacity: 0.9;
+  bottom: 80px;
+  background: #0071bc;
+  width: 984px;
+  height: 357px;
+  right: 250px;
+  border-radius: 30px;
+  z-index: 0;
+}
+.background img{
 border-radius: 48px;
-background: url(IMG_1683.jpg);
+height: 357px;
+width: 984px;
+opacity: 0.1;
 }
 .AddLINE{
   position: absolute;
 width: 320px;
 height: 50px;
-left: 0px;
-top: 0px;
+left: 100px;
+top: 120px;
+background-color: #FFFFFF;
+border-radius: 98px;
+}
 
 
 /* light */
-
-background: #FFFFFF;
+.white{
+  width: 320px;
+  height: 50px;
 border-radius: 98px;
+z-index: 5;
+/* なんで背景色の下に文字がある？ */
+}
+.AddLINE p{
+color:black ;
+position: absolute;
+z-index: 20;
+top: 1px;
+right: 110px;
+
 }
 .linkDark{
   position: absolute;
-left: 52.08%;
-right: 2.08%;
-top: 2.08%;
-bottom: 52.08%;
+  top: 14px;
+  right: 10px;
 
 /* dark */
 
-border: 1px solid #333333;
 }
 footer{
-  position: absolute;
+position: absolute;
 width: 1440px;
 height: 355px;
-left: 0px;
+left: 140px;
 top: 1875px;
-
+text-align: center;
+}
+.posseLine{
+  position: fixed;
+  background-color:#5FDF5B;
+  display: flex;
+  width: 288px;
+  height: 80px;
+  color: #eff2f5;
+  justify-content: space-between;
+  border-radius: 20px;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  bottom: 1%;
+  right: 1%;
+  z-index: 100;
 }
 .p{
   
@@ -263,5 +322,8 @@ top: 1875px;
   top: 1875px;
   height: 355px;
   text-align: center;
+}
+.sns{
+margin-bottom: 80px;
 }
 
