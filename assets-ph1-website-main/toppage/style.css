@@ -1,26 +1,26 @@
-head{
-  font-family: 'Noto Sans JP', sans-serif;
+head {
+  font-family: "Noto Sans JP", sans-serif;
 }
-header{
+header {
   display: flex;
   flex-direction: row;
-  padding: 0,24,0,24;
+  padding: 0, 24, 0, 24;
   height: 80px;
   gap: 474px;
   justify-content: space-between;
-  position:absolute;
+  position: absolute;
   width: 100%;
   height: 80px;
   left: 0px;
   top: 0px;
   align-items: center;
   margin: 0 auto;
-  }
-  .posse{
-    margin: 60px;
-    margin-top: 100px; 
-  }
-.nav{
+}
+.posse {
+  margin: 60px;
+  margin-top: 100px;
+}
+.nav {
   display: flex;
   list-style-type: none;
   /* リストの点々の表記 */
@@ -31,7 +31,7 @@ header{
   width: 300px;
   /* なんでwidth必要なん？ */
 }
-.Front{
+.Front {
   position: relative;
   width: 100%;
   height: 680px;
@@ -39,15 +39,13 @@ header{
   right: 0px;
   margin-top: 100px;
 }
-.scrollDown{
+.scrollDown {
   width: 200px;
   position: absolute;
   bottom: 5%;
-
 }
-li{
+li {
   color: gray;
-  
 }
 /* .dot{
   position: relative;
@@ -56,8 +54,8 @@ li{
 } */
 
 /*  */
-.Best{
-  border:10px solid #eff2f5;
+.Best {
+  border: 10px solid #eff2f5;
   border-radius: 24px;
   background: #eff2f5;
   width: 32%;
@@ -65,21 +63,20 @@ li{
   top: 140px;
   left: 20px;
   margin: 50px;
-  z-index: 50;/* これでマージンおk？ */
+  z-index: 50; /* これでマージンおk？ */
   position: absolute;
   text-align: center;
   margin: 0 auto;
-
 }
 
-main section h1{
+main section h1 {
   font-size: 60px;
   font-weight: 700px;
   line-height: 80px;
 }
-.PosseImg{
-  background:url(../img/img-hero.jpg) ;
-  border-radius: 80px 0px 0px 80px ;
+.PosseImg {
+  background: url(../img/img-hero.jpg);
+  border-radius: 80px 0px 0px 80px;
   background-size: cover;
   position: absolute;
   width: 70%;
@@ -90,9 +87,9 @@ main section h1{
   z-index: 10;
 }
 
-  /* 重ねるためimgはbackgroundにいく
+/* 重ねるためimgはbackgroundにいく
 imgをすべて表示させるためにcoverを使う？   */
-.AboutPOSSE{
+.AboutPOSSE {
   position: absolute;
   width: 100%;
   margin: 0 auto;
@@ -100,150 +97,141 @@ imgをすべて表示させるためにcoverを使う？   */
   position: absolute;
   transform: translate(45%);
 }
-.AboutTitle{
+.AboutTitle {
   position: absolute;
   width: 195px;
   height: 90px;
-  top: 0px  
+  top: 0px;
 }
-.AboutPOSSE h2{
+.AboutPOSSE h2 {
   position: relat;
   width: 191px;
   height: 54px;
-  left: calc(50% - 191px/2);
+  left: calc(50% - 191px / 2);
   top: 0px;
-  
-  font-family: 'Noto Sans JP';
+
+  font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 150%;
   /* identical to box height, or 54px */
-  
+
   text-align: center;
-  
+
   /* dark */
-  
-  color: #333333; 
+
+  color: #333333;
 }
-.BlueAbout{
+.BlueAbout {
   position: absolute;
-width: 120px;
-height: 25px;
-left: 35px;
-top: 70px;
+  width: 120px;
+  height: 25px;
+  left: 35px;
+  top: 70px;
 
+  /* subtitle */
 
-/* subtitle */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 180%;
+  /* or 25px */
 
-font-family: 'Plus Jakarta Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 180%;
-/* or 25px */
-
-text-align: center;
-flex-wrap: nowrap;
-
+  text-align: center;
+  flex-wrap: nowrap;
 }
-.ImgText{
-/* Auto layout */
-position: absolute;
-display:flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-margin: 0 auto;
-width: 20%;
-gap: 40px;
-
-position: absolute;
-width: 12%;
-height: 312px;
-top: 130px;  
-}
-.Explain{
-position:absolute;
-width: 472px;
-height: 175px;
-
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 180%;
-/* or 25px */
-
-text-align: justify;
-
-/* dark */
-
-color: #333333;
-
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-transform: translate(55%);
-}
-
-.AboutImg{
+.ImgText {
+  /* Auto layout */
   position: absolute;
-  background:url(
-    ../img/img-about.jpg 
-  );
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 20%;
+  gap: 40px;
+
+  position: absolute;
+  width: 12%;
+  height: 312px;
+  top: 130px;
+}
+.Explain {
+  position: absolute;
+  width: 472px;
+  height: 175px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 180%;
+  /* or 25px */
+
+  text-align: justify;
+
+  /* dark */
+
+  color: #333333;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  transform: translate(55%);
+}
+
+.AboutImg {
+  position: absolute;
+  background: url(../img/img-about.jpg);
   width: 472px;
   height: 312px;
   border-radius: 24px;
-  background-size:cover;
+  background-size: cover;
   flex-grow: 0;
   transform: translate(-55%);
   /* * これなに？ * */
 }
-h3{
+h3 {
   color: #0071bc;
 }
 
-.line{
+.line {
   position: relative;
   width: 55%;
   height: 358px;
   top: 50%;
-  transform: translate(40%,200%);
+  transform: translate(40%, 200%);
   margin: 0;
 
-
-  
-  color:#eff2f5;
+  color: #eff2f5;
   z-index: 10;
   /*  位置指定でごり押したけど子要素を縦から順に並べる方法はある？ */
 }
-.inner{
+.inner {
   position: absolute;
   z-index: 10;
   top: 40px;
-
 }
-.title{
-position: absolute;
-width: 180%;
-bottom: 100px;
-flex-wrap: nowrap;
-text-align: center;
-margin: auto 0;
+.title {
+  position: absolute;
+  width: 180%;
+  bottom: 100px;
+  flex-wrap: nowrap;
+  text-align: center;
+  margin: auto 0;
 }
-.lineIcon{
+.lineIcon {
   position: absolute;
   right: 250px;
   top: 30%;
-  
 }
-.text{
+.text {
   width: 180%;
   text-align: center;
 }
-.background{
+.background {
   position: absolute;
   bottom: 80px;
   background: #0071bc;
@@ -252,62 +240,59 @@ margin: auto 0;
   border-radius: 30px;
   z-index: 0;
 }
-.background img{
-border-radius: 48px;
-height: 357px;
-width: 984px;
-opacity: 0.1;
-position: absolute;
-transform: translate;
-/* margin: auto 0; */
-}
-.AddLINE{
+.background img {
+  border-radius: 48px;
+  height: 357px;
+  width: 984px;
+  opacity: 0.1;
   position: absolute;
-width: 75%;
-height: 50px;
-left: 100px;
-top: 120px;
-background-color: #FFFFFF;
-border-radius: 98px;
-transform: translate(45%);
+  transform: translate;
+  /* margin: auto 0; */
 }
-
+.AddLINE {
+  position: absolute;
+  width: 75%;
+  height: 50px;
+  left: 100px;
+  top: 120px;
+  background-color: #ffffff;
+  border-radius: 98px;
+  transform: translate(45%);
+}
 
 /* light */
-.white{
+.white {
   width: 320px;
   height: 50px;
-border-radius: 98px;
-z-index: 5;
-/* なんで背景色の下に文字がある？ */
+  border-radius: 98px;
+  z-index: 5;
+  /* なんで背景色の下に文字がある？ */
 }
-.AddLINE p{
-color:black ;
-position: absolute;
-z-index: 20;
-top: 1px;
-right: 40%;
-
+.AddLINE p {
+  color: black;
+  position: absolute;
+  z-index: 20;
+  top: 1px;
+  right: 40%;
 }
-.linkDark{
+.linkDark {
   position: absolute;
   top: 14px;
   right: 10px;
 
-/* dark */
-
+  /* dark */
 }
-footer{
-position: absolute;
-width: 1440px;
-height: 355px;
-left: 140px;
-top: 1875px;
-text-align: center;
+footer {
+  position: absolute;
+  width: 1440px;
+  height: 355px;
+  left: 140px;
+  top: 1875px;
+  text-align: center;
 }
-.posseLine{
+.posseLine {
   position: fixed;
-  background-color:#5FDF5B;
+  background-color: #5fdf5b;
   display: flex;
   width: 288px;
   height: 80px;
@@ -320,14 +305,12 @@ text-align: center;
   right: 1%;
   z-index: 100;
 }
-.p{
-  
+.p {
   position: absolute;
   top: 1875px;
   height: 355px;
   text-align: center;
 }
-.sns{
-margin-bottom: 80px;
+.sns {
+  margin-bottom: 80px;
 }
-
