@@ -1,0 +1,483 @@
+head {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+header {
+  /* position: fixed; */
+  display: flex;
+  flex-direction: row;
+  padding: 0, 24, 0, 24;
+  height: 80px;
+  gap: 474px;
+  justify-content: space-between;
+  /* position:absolute; */
+  width: 100%;
+  height: 80px;
+  /* left: 0px; */
+  /* top: 0px; */
+  align-items: center;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {.header{
+  margin-top: 50px;
+    }}
+
+.posse {
+  margin: 60px;
+  margin-top: 120px;
+
+}
+@media screen and (max-width: 768px) {.posse{
+  margin: 20px;
+    }}
+.nav {
+  display: flex;
+  list-style-type: none;
+  /* リストの点々の表記 */
+  position: relative;
+  bottom: 110px;
+
+  /* margin-left: 400%; */
+  justify-content: space-around;
+  width: 100%;
+  transform: translateX(900px);
+  /* なんでwidth必要なん？ */
+}
+@media screen and (max-width: 768px) {.nav{
+  transform: translateX(0px);
+  text-align: center;
+    }}
+
+
+
+
+
+
+  input{
+
+    width: 100px;
+    /* アイコンと同じサイズ */
+  }
+  label {
+      width: 30px;
+      height: 30px;
+      border: 1px solid  black;
+      position: absolute;
+      right:9px;
+      top: 11px;
+      z-index: 1500;
+    
+      }
+  
+  span {
+      width: 20px;
+      height: 1px;
+      background-color: black;
+      position: absolute;
+      right: 15px;
+      transition: .3s;
+      z-index: 1500;
+  }
+  
+  .hum1 {
+      top: 20px;
+  }
+  .hum2 { 
+      top: 27px;
+  }
+  
+  .hum3 {
+      top: 34px;
+  }
+  
+    /* クリックしたらばつ印になるようにする */
+  #confirm:checked ~ .hum1 {
+      width: 27px;
+      transform: rotate(45deg);
+      top :27px;
+      right: 12px;
+  }
+  #confirm:checked ~ .hum2 {
+      display: none;
+  }
+  #confirm:checked ~ .hum3 {
+      width: 27px;
+      transform: rotate(-45deg);
+      top :27px;
+      right: 12px;
+  }
+  
+  #confirm {
+      display: none;
+  }
+  ul {
+      position: fixed;
+      width: 100%;
+      height: 90%;
+      right: -120%;
+      text-align: center;
+      background-color:white;
+      transition: 2s;
+      z-index: 1500;
+      
+  
+  }
+  @media screen and (max-width: 768px) {.ul{
+    width: 100%;
+      }}
+
+  
+  li {
+      text-align: center;
+      margin-top: 30px;
+      z-index: 1500;
+  }
+  
+  li>a{
+    text-decoration: none;
+    color:black;
+  }
+  
+  #confirm:checked ~ ul {
+      right:0 ;
+      z-index: 1000;
+  }
+  
+
+
+.ulLine{
+  display: flex;
+  background-color: #5fdf5b;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-radius: 30px;
+  text-align: center;
+  
+}
+@media screen and (max-width: 768px) {.ulLine{
+  width: 375px;
+    }}
+
+
+.ulLineText{
+  display: flex;
+  transform: translateX(60px);
+  color: white;
+  gap: 20px;
+}
+
+
+
+.ulPosse{
+  display: flex;
+  transform: translateX(110px);
+  color: gray;
+
+}
+
+
+@media screen and (min-width: 768px) {
+  .none {
+    display: none;  /*768px以上では使用しない */
+}
+
+
+
+}
+
+
+
+
+
+main {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 100vw;
+}
+.mainvisual {
+  /* position: */
+  margin-top: 5%;
+  background-image: url(../img/quiz/bg-hero.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 320px;
+  font-size: 60px;
+  color: #eff2f5;
+}
+@media screen and (max-width: 768px) {.mainvisual{
+
+}}
+
+
+@media screen and (max-width: 768px) {.mission{
+  font-size: 40px;
+  padding-top: 25px;
+}}
+@media screen and (max-width: 768px) {.itQuiz{
+  font-size: 64px;
+}}
+
+/* @media screen and (max-width: 768px) {width: ; */
+
+.quiz {
+  flex-direction: column;
+  font-size: 36px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+@media screen and (max-width: 768px) {.quiz{
+  font-size: 18px;
+}}
+
+
+@media screen and (min-width: 768px) {
+.quizImg{
+  width:90%;
+}}
+
+.quiz button {
+  width: 300px;
+  height: 80px;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  margin-right: 5%;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {.quiz button{
+  height: 50px;
+  line-height: 40px;
+  flex-flow: column;
+}
+}
+
+
+
+
+.Q {
+  text-align: start;
+  margin-top: 5%;
+  color: #eff2f5;
+  background-color: #0071bc;
+  width: 4%;
+  padding: 2%;
+  border-radius: 10%;
+}
+@media screen and (max-width: 768px) {.Q{width: 13%;
+}}
+
+
+.A {
+  text-align: start;
+  margin-top: 5%;
+  color: #eff2f5;
+  background-color: crimson;
+  width: 2%;
+  padding: 3%;
+  border-radius: 10%;
+}
+@media screen and (max-width: 768px) {.A{width: 8%;
+}}
+
+
+.quiz h4 {
+  text-align: start;
+}
+.quiz button {
+  /* 左に合わせたい */
+}
+
+.p-quiz-box__answer__correct__content__label{
+  display: none;
+}
+.js-answerText{
+  display: none;
+}
+
+.note {
+  font-size: 18px;
+  background-color: #eff2f5;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.line {
+  position: relative;
+  width: 984px;
+  height: 358px;
+  top: 50%;
+  transform: translate(0%, 200%);
+  margin-left: auto;
+  margin-right: auto;
+
+  color: #eff2f5;
+  z-index: 10;
+  /*  位置指定でごり押したけど子要素を縦から順に並べる方法はある？ */
+}
+@media screen and (max-width: 768px) {.line{
+  width:340px ;
+}
+}
+
+.inner {
+  position: absolute;
+  z-index: 10;
+  top: 40px;
+}
+.title {
+  position: absolute;
+  width: 180%;
+  bottom: 100px;
+  flex-wrap: nowrap;
+  text-align: center;
+  margin: auto 0;
+}
+@media screen and (max-width: 768px) {.title{
+width: 100%;
+}
+}
+
+.lineIcon {
+  position: absolute;
+  right: 250px;
+  top: 30%;
+}
+@media screen and (max-width: 768px) {.lineIcon{
+top:-15px;
+right: 148px;
+}
+}
+
+.text {
+  width: 180%;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {.text{
+width: 90%;
+transform: translate(5%);
+margin-top: -10px;
+margin-bottom: -10px;
+}
+}
+
+.background {
+  position: absolute;
+  bottom: 80px;
+  background: #0071bc;
+  width: 100%;
+  height: 357px;
+  border-radius: 30px;
+  z-index: 0;
+}
+@media screen and (max-width: 768px) {.background{
+width: 100%;
+}
+}
+
+.background img {
+  border-radius: 48px;
+  height: 357px;
+  width: 984px;
+  opacity: 0.1;
+  position: absolute;
+  transform: translate;
+  /* margin: auto 0; */
+}
+.AddLINE {
+  position: absolute;
+  width: 75%;
+  height: 50px;
+  left: 100px;
+  top: 120px;
+  background-color: #ffffff;
+  border-radius: 98px;
+  transform: translate(45%);
+}
+@media screen and (max-width: 768px) {.AddLINE{
+width: 90%;
+left: 0px;
+transform: translate(5%);
+}}
+
+/* light */
+.white {
+  width: 320px;
+  height: 50px;
+  border-radius: 98px;
+  z-index: 5;
+  /* なんで背景色の下に文字がある？ */
+}
+.AddLINE p {
+  color: black;
+  position: absolute;
+  z-index: 20;
+  top: 1px;
+  right: 40%;
+}
+.linkDark {
+  position: absolute;
+  top: 14px;
+  right: 10px;
+
+  /* dark */
+}
+footer {
+  position: relative;
+  width: 100vw;
+  height: 355px;
+  /* left: 140px; */
+  top: 1875px;
+  text-align: center;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+.posseLine {
+  position: fixed;
+  background-color: #5fdf5b;
+  display: flex;
+  width: 288px;
+  height: 80px;
+  color: #eff2f5;
+  justify-content: space-between;
+  border-radius: 20px;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  bottom: 1%;
+  right: 1%;
+  z-index: 100;
+}
+/* @media screen and (max-width: 768px) {.posseLine{
+  width: ;
+} */
+
+.official{
+  color: black;
+}
+
+.p {
+  position: absolute;
+  top: 1875px;
+  height: 355px;
+  text-align: center;
+}
+.sns {
+  margin-bottom: 80px;
+  display: flex;
+}
+.twitter{
+  /* margin-right: auto; */
+  margin-left: auto;
+}
+.instagram{
+  margin-right: auto;
+  /* margin-left: auto; */
+}
+
